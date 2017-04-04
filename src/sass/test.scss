@@ -1,7 +1,102 @@
-ul {
-  li {
-    &:hover {
-      border: 1px solid black;
-    }
-  }
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../img/bg_menu.png);
+	background-repeat: repeat-x;
+
+}
+.logo{
+	display: inline-block;
+}
+.logo__img{
+	width: 200px;
+}
+.navi{
+	display: inline-block;
+}
+.form__search{
+	display: inline-block;
+}
+.navi__menu{
+	
+	li{
+		display: inline-block;
+		&:hover{
+			background-color: #FFCD41;
+		}
+		a{
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+			color: #fff;
+			font-weight: 600;
+		}
+	}
+}
+.main{
+	overflow: hidden;
+}
+.asideL__cat-menu{
+	float: left;
+	width: 20%;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	background-color: #57748B;
+}
+.asideL__cat-menu{
+
+}
+.cat-menu{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	li{
+		margin: 15px;
+	}
+}
+.content{
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 60%;
+	min-height: 500px;
+}
+.tovar_card{
+	margin: 20px;
+	display: block;
+	width: 150px;
+	height: 200px;
+	background-color: #D4D0C8;
+	a{
+		display: block;
+		width: 150px;
+		height: 200px;
+	}
+	&:hover{
+		background-color: #ff0;
+	}
+}
+.news{
+	float: left;
+	width: 20%;
+	min-height: 500px;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	background-color: #57748B;
+}
+.clear{
+	clear: both;
+}
+.foo{
+
 }
